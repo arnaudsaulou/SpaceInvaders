@@ -1,3 +1,5 @@
+import utils.HorsEspaceJeuException;
+
 public class SpaceInvaders {
 
     public static final char MARQUE = 'V';
@@ -14,7 +16,15 @@ public class SpaceInvaders {
     }
 
     public void positionnerUnNouveauVaisseau(int x, int y) {
-        this.vaisseau = new Vaisseau(x, y);
+
+        if (!estDansEspaceJeu(x, y))
+            throw new HorsEspaceJeuException("Vous êtes en dehors de l'espace jeu");
+
+        vaisseau = new Vaisseau(x, y);
+    }
+
+    private boolean estDansEspaceJeu(int x, int y) {
+        return (((x >= 0) && (x < longueur)) && ((y >= 0) && (y < hauteur)));
     }
 
     private char recupererMarqueDeLaPosition(int x, int y) {
@@ -36,6 +46,10 @@ public class SpaceInvaders {
 
     @Override
     public String toString() {
+        return recupererEspaceJeuDansChaineASCII();
+    }
+
+    public String recupererEspaceJeuDansChaineASCII() {
         StringBuilder espaceDeJeu = new StringBuilder();
         for (int y = 0; y < hauteur; y++) {
             for (int x = 0; x < longueur; x++) {
@@ -45,6 +59,4 @@ public class SpaceInvaders {
         }
         return espaceDeJeu.toString();
     }
-
-
 }
