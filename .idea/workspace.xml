@@ -6,6 +6,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/SpaceInvaders.java" afterPath="$PROJECT_DIR$/src/main/java/SpaceInvaders.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Vaisseau.java" afterPath="$PROJECT_DIR$/src/main/java/Vaisseau.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java" afterPath="$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpaceInvaders.class" afterPath="$PROJECT_DIR$/target/classes/SpaceInvaders.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SpaceInvadersTest.class" afterPath="$PROJECT_DIR$/target/test-classes/SpaceInvadersTest.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SpaceInvaders.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SpaceInvaders.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SpaceInvaders.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="62" column="48" lean-forward="true" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+            <state relative-caret-position="414">
+              <caret line="70" column="34" lean-forward="false" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
               <folding>
                 <element signature="e#1190#1191#0" expanded="true" />
                 <element signature="e#1229#1230#0" expanded="true" />
@@ -36,25 +38,27 @@
       <file leaf-file-name="Vaisseau.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Vaisseau.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="205">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#182#183#0" expanded="true" />
                 <element signature="e#235#236#0" expanded="true" />
-                <element signature="e#279#280#0" expanded="true" />
-                <element signature="e#314#315#0" expanded="true" />
-                <element signature="e#343#344#0" expanded="true" />
+                <element signature="e#264#265#0" expanded="true" />
+                <element signature="e#293#294#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
                 <element signature="e#372#373#0" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpaceInvadersTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SpaceInvadersTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="118" column="5" lean-forward="false" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+            <state relative-caret-position="23">
+              <caret line="83" column="48" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding>
                 <element signature="e#290#291#0" expanded="true" />
                 <element signature="e#347#348#0" expanded="true" />
@@ -115,8 +119,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/HorsEspaceJeuException.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/HorsEspaceJeuException.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Vaisseau.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/SpaceInvaders.java" />
       </list>
     </option>
@@ -405,7 +409,7 @@
       <updated>1525266547739</updated>
       <workItem from="1525266549431" duration="928000" />
       <workItem from="1525680390278" duration="3839000" />
-      <workItem from="1525893479817" duration="3007000" />
+      <workItem from="1525893479817" duration="3410000" />
     </task>
     <task id="LOCAL-00001" summary="Récupération Story 2">
       <created>1525685629633</created>
@@ -421,16 +425,17 @@
       <option name="project" value="LOCAL" />
       <updated>1525895593505</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Déplacer le vaisseau vers la droite">
+      <created>1525896545163</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1525896545163</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpaceInvadersTest - 2018.05.09 at 21h 40m 40s.xml">
-      <configuration name="SpaceInvadersTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpaceInvadersTest - 2018.05.09 at 21h 41m 12s.xml">
-      <configuration name="SpaceInvadersTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SpaceInvadersTest - 2018.05.09 at 21h 47m 14s.xml">
       <configuration name="SpaceInvadersTest" configurationId="JUnit" />
     </history-entry>
@@ -452,12 +457,18 @@
     <history-entry file="SpaceInvadersTest - 2018.05.09 at 22h 06m 38s.xml">
       <configuration name="SpaceInvadersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpaceInvadersTest_test_unNouveauVaisseauEstCorrectementPositionneDansEspaceJeu - 2018.05.09 at 21h 40m 33s.xml">
-      <configuration name="SpaceInvadersTest.test_unNouveauVaisseauEstCorrectementPositionneDansEspaceJeu" configurationId="JUnit" />
+    <history-entry file="SpaceInvadersTest - 2018.05.09 at 22h 12m 41s.xml">
+      <configuration name="SpaceInvadersTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpaceInvadersTest - 2018.05.09 at 22h 13m 18s.xml">
+      <configuration name="SpaceInvadersTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpaceInvadersTest - 2018.05.09 at 22h 13m 46s.xml">
+      <configuration name="SpaceInvadersTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7774000" />
+    <option name="totallyTimeSpent" value="8177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -480,7 +491,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.398773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.398773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -498,7 +509,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Récupération Story 2" />
     <MESSAGE value="Positionner un nouveau vaisseau" />
-    <option name="LAST_COMMIT_MESSAGE" value="Positionner un nouveau vaisseau" />
+    <MESSAGE value="Déplacer le vaisseau vers la droite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Déplacer le vaisseau vers la droite" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -539,26 +551,17 @@
           <folding>
             <element signature="e#182#183#0" expanded="true" />
             <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
             <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="118" column="5" lean-forward="false" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
-          <folding>
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/HorsEspaceJeuException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -573,28 +576,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Vaisseau.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="205">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#182#183#0" expanded="true" />
             <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
             <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SpaceInvaders.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="62" column="48" lean-forward="true" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+        <state relative-caret-position="414">
+          <caret line="70" column="34" lean-forward="false" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
           <folding>
             <element signature="e#1190#1191#0" expanded="true" />
             <element signature="e#1229#1230#0" expanded="true" />
             <element signature="e#1275#1276#0" expanded="true" />
             <element signature="e#1333#1334#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="83" column="48" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
           </folding>
         </state>
       </provider>
