@@ -59,4 +59,11 @@ public class SpaceInvaders {
         }
         return espaceDeJeu.toString();
     }
+
+    public void deplacerVaisseauVersLaDroite() {
+        if (vaisseau.abscisse() < (longueur - 1)) {
+            vaisseau.seDeplacerVersLaDroite();
+        }
+
+    }
 }
