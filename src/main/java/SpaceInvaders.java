@@ -5,10 +5,6 @@ import utils.HorsEspaceJeuException;
 
 public class SpaceInvaders implements Jeu {
 
-    public static final char MARQUE = 'V';
-    public static final char MARQUE_VIDE = '.';
-    public static final char MARQUE_FIN_LIGNE = '\n';
-
     int longueur;
     int hauteur;
     Vaisseau vaisseau;
@@ -21,7 +17,7 @@ public class SpaceInvaders implements Jeu {
     public void initialiserJeu() {
         Position positionVaisseau = new Position(this.longueur / 2, this.hauteur - 1);
         Dimension dimensionVaisseau = new Dimension(Constante.VAISSEAU_LONGUEUR, Constante.VAISSEAU_HAUTEUR);
-        positionnerUnNouveauVaisseau(dimensionVaisseau, positionVaisseau, 20);
+        positionnerUnNouveauVaisseau(dimensionVaisseau, positionVaisseau, Constante.VAISSEAU_VITESSE);
     }
 
     public void positionnerUnNouveauVaisseau(Dimension dimension, Position position, int vitesse) {
@@ -50,9 +46,9 @@ public class SpaceInvaders implements Jeu {
     private char recupererMarqueDeLaPosition(int x, int y) {
         char marque;
         if (this.aUnVaisseauQuiOccupeLaPosition(x, y))
-            marque = MARQUE;
+            marque = Constante.MARQUE_VAISSEAU;
         else
-            marque = MARQUE_VIDE;
+            marque = Constante.MARQUE_VIDE;
         return marque;
     }
 
@@ -76,7 +72,7 @@ public class SpaceInvaders implements Jeu {
             for (int x = 0; x < longueur; x++) {
                 espaceDeJeu.append(recupererMarqueDeLaPosition(x, y));
             }
-            espaceDeJeu.append(MARQUE_FIN_LIGNE);
+            espaceDeJeu.append(Constante.MARQUE_FIN_LIGNE);
         }
         return espaceDeJeu.toString();
     }
