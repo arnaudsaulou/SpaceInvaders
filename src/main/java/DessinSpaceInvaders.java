@@ -36,7 +36,6 @@ public class DessinSpaceInvaders implements DessinJeu {
 
         crayon.setColor(Color.blue);
         crayon.fillRect(missile.abscisseLaPlusAGauche(), missile.ordonneeLaPlusBasse(), missile.longueur(), missile.hauteur());
-
     }
 
 }

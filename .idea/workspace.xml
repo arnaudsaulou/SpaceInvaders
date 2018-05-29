@@ -2,36 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="719ca721-7d8c-44e7-8a6c-14f63b6fdde8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Missile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/MissileException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/VaisseauTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Constante.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/DessinSpaceInvaders.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Dimension.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Position.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Sprite.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Vaisseau.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/moteurJeu/Commande.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/moteurJeu/Controleur.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/moteurJeu/DessinJeu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/moteurJeu/InterfaceGraphique.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/moteurJeu/Jeu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/moteurJeu/MoteurGraphique.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/moteurJeu/PanelDessin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/utils/DebordementEspaceJeuException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/utils/HorsEspaceJeuException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Direction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class_Diagram_SpaceInvaders.png" beforeDir="false" afterPath="$PROJECT_DIR$/Class_Diagram_SpaceInvaders.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word_Cloud_SpaceInvader.png" beforeDir="false" afterPath="$PROJECT_DIR$/Word_Cloud_SpaceInvader.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Constante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Constante.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DessinSpaceInvaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DessinSpaceInvaders.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SpaceInvaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpaceInvaders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vaisseau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vaisseau.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moteurJeu/Commande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moteurJeu/Commande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sprite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/moteurJeu/Controleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moteurJeu/Controleur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Constante.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Constante.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DessinSpaceInvaders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DessinSpaceInvaders.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SpaceInvaders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SpaceInvaders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Sprite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Sprite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moteurJeu/Controleur.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moteurJeu/Controleur.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SpaceInvadersTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SpaceInvadersTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -49,34 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SpaceInvadersTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="265" column="26" selection-start-line="265" selection-start-column="26" selection-end-line="265" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MissileException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/MissileException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding>
-                <element signature="e#16#43#0" expanded="true" />
-                <element signature="e#146#147#0" expanded="true" />
-                <element signature="e#176#177#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpaceInvaders.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SpaceInvaders.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SpaceInvaders.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="111" column="39" selection-start-line="111" selection-start-column="39" selection-end-line="111" selection-end-column="39" />
+            <state relative-caret-position="179">
+              <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
               <folding>
                 <element signature="e#2415#2416#0" expanded="true" />
                 <element signature="e#2454#2455#0" expanded="true" />
@@ -84,10 +44,62 @@
                 <element signature="e#2528#2529#0" expanded="true" />
                 <element signature="e#3855#3856#0" expanded="true" />
                 <element signature="e#3891#3892#0" expanded="true" />
+                <element signature="e#3932#3933#0" expanded="true" />
                 <element signature="e#3967#3968#0" expanded="true" />
-                <element signature="e#4595#4596#0" expanded="true" />
-                <element signature="e#4623#4624#0" expanded="true" />
+                <element signature="e#5190#5191#0" expanded="true" />
+                <element signature="e#5218#5219#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InterfaceGraphique.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/InterfaceGraphique.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="44" column="14" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MoteurGraphique.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/MoteurGraphique.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="40" column="19" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Direction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Direction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="21" />
+              <folding>
+                <element signature="e#185#186#0" expanded="true" />
+                <element signature="e#221#222#0" expanded="true" />
+                <element signature="e#248#249#0" expanded="true" />
+                <element signature="e#282#283#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constante.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Constante.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -95,8 +107,8 @@
       <file leaf-file-name="DessinSpaceInvaders.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DessinSpaceInvaders.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="20" column="55" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="55" />
+            <state relative-caret-position="162">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#235#236#0" expanded="true" />
@@ -106,56 +118,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constante.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Constante.java">
+      <file leaf-file-name="Sprite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Sprite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+            <state relative-caret-position="-147">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Vaisseau.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Vaisseau.java">
+      <file leaf-file-name="SpaceInvadersTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controleur.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/Controleur.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="63" column="36" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoteurGraphique.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/MoteurGraphique.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="51" column="24" lean-forward="true" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Jeu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/Jeu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Commande.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/Commande.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="281">
+              <caret line="303" selection-start-line="303" selection-end-line="303" />
             </state>
           </provider>
         </entry>
@@ -188,8 +164,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Arnaud Saulou &lt;a.saulou@gmail.com&gt;" />
         <option value="Arnaud SAULOU &lt;a.saulou@gmail.com&gt;" />
+        <option value="Arnaud Saulou &lt;a.saulou@gmail.com&gt;" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -203,18 +179,19 @@
         <option value="$PROJECT_DIR$/src/main/java/utils/DebordementEspaceJeuException.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dimension.java" />
         <option value="$PROJECT_DIR$/src/main/java/Position.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Sprite.java" />
         <option value="$PROJECT_DIR$/src/main/java/Missile.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/MissileException.java" />
         <option value="$PROJECT_DIR$/src/test/java/VaisseauTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Vaisseau.java" />
-        <option value="$PROJECT_DIR$/src/main/java/moteurJeu/Controleur.java" />
         <option value="$PROJECT_DIR$/src/main/java/moteurJeu/Commande.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Constante.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Direction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Sprite.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/DessinSpaceInvaders.java" />
+        <option value="$PROJECT_DIR$/src/main/java/moteurJeu/Controleur.java" />
         <option value="$PROJECT_DIR$/src/main/java/SpaceInvaders.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Constante.java" />
       </list>
     </option>
   </component>
@@ -360,7 +337,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpaceInvadersTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -464,8 +441,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpaceInvadersTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SpaceInvadersTest" />
         <item itemvalue="JUnit.SpaceInvadersTest.test_unNouveauVaisseauEstCorrectementPositionneDansEspaceJeu" />
       </list>
     </recent_temporary>
@@ -487,7 +464,7 @@
       <workItem from="1526657918718" duration="5890000" />
       <workItem from="1527082825629" duration="6803000" />
       <workItem from="1527531084493" duration="264000" />
-      <workItem from="1527593652634" duration="1812000" />
+      <workItem from="1527593652634" duration="4226000" />
     </task>
     <task id="LOCAL-00001" summary="Récupération Story 2">
       <created>1525685629633</created>
@@ -566,43 +543,50 @@
       <option name="project" value="LOCAL" />
       <updated>1527091181515</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Tirer un missile">
+      <created>1527595554103</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1527595554103</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpaceInvadersTest - 2018.05.23 at 17h 08m 29s.xml">
+    <history-entry file="SpaceInvadersTest - 2018.05.29 at 14h 28m 12s.xml">
       <configuration name="SpaceInvadersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpaceInvadersTest - 2018.05.29 at 13h 43m 25s.xml">
+    <history-entry file="SpaceInvadersTest - 2018.05.29 at 14h 28m 42s.xml">
       <configuration name="SpaceInvadersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpaceInvadersTest - 2018.05.29 at 13h 44m 22s.xml">
+    <history-entry file="SpaceInvadersTest - 2018.05.29 at 14h 29m 11s.xml">
       <configuration name="SpaceInvadersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpaceInvadersTest - 2018.05.29 at 13h 44m 49s.xml">
+    <history-entry file="SpaceInvadersTest - 2018.05.29 at 14h 29m 24s.xml">
       <configuration name="SpaceInvadersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpaceInvadersTest - 2018.05.29 at 13h 49m 30s.xml">
+    <history-entry file="SpaceInvadersTest - 2018.05.29 at 14h 29m 36s.xml">
       <configuration name="SpaceInvadersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpaceInvadersTest - 2018.05.29 at 13h 51m 51s.xml">
+    <history-entry file="SpaceInvadersTest - 2018.05.29 at 14h 30m 17s.xml">
       <configuration name="SpaceInvadersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpaceInvadersTest - 2018.05.29 at 13h 52m 28s.xml">
+    <history-entry file="SpaceInvadersTest - 2018.05.29 at 14h 30m 26s.xml">
       <configuration name="SpaceInvadersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpaceInvadersTest - 2018.05.29 at 13h 56m 16s.xml">
+    <history-entry file="SpaceInvadersTest - 2018.05.29 at 14h 32m 39s.xml">
       <configuration name="SpaceInvadersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpaceInvadersTest - 2018.05.29 at 13h 58m 46s.xml">
+    <history-entry file="SpaceInvadersTest - 2018.05.29 at 14h 36m 14s.xml">
       <configuration name="SpaceInvadersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpaceInvadersTest - 2018.05.29 at 14h 02m 04s.xml">
+    <history-entry file="SpaceInvadersTest - 2018.05.29 at 14h 40m 46s.xml">
       <configuration name="SpaceInvadersTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24040000" />
+    <option name="totallyTimeSpent" value="26454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -619,20 +603,20 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.3297546" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
       <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297546" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.398773" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398773" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32980332" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3297546" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -654,7 +638,8 @@
     <MESSAGE value="Intégration du moteur graphique" />
     <MESSAGE value="Ajout vitesse du vaisseau" />
     <MESSAGE value="refactoring Sprite" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring Sprite" />
+    <MESSAGE value="Tirer un missile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tirer un missile" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -998,13 +983,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Sprite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Position.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1217,24 +1195,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Missile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding>
-            <element signature="e#108#109#0" expanded="true" />
-            <element signature="e#158#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/VaisseauTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1257,24 +1217,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="265" column="26" selection-start-line="265" selection-start-column="26" selection-end-line="265" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/Commande.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Constante.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -1285,31 +1231,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/Controleur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="63" column="36" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/MoteurGraphique.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="51" column="24" lean-forward="true" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/Jeu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DessinSpaceInvaders.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="20" column="55" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="55" />
+        <state relative-caret-position="162">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#235#236#0" expanded="true" />
@@ -1318,10 +1243,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/Controleur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/Jeu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Missile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Direction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="303" selection-start-line="303" selection-end-line="303" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SpaceInvaders.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="111" column="39" selection-start-line="111" selection-start-column="39" selection-end-line="111" selection-end-column="39" />
+        <state relative-caret-position="179">
+          <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
           <folding>
             <element signature="e#2415#2416#0" expanded="true" />
             <element signature="e#2454#2455#0" expanded="true" />
@@ -1329,10 +1302,39 @@
             <element signature="e#2528#2529#0" expanded="true" />
             <element signature="e#3855#3856#0" expanded="true" />
             <element signature="e#3891#3892#0" expanded="true" />
+            <element signature="e#3932#3933#0" expanded="true" />
             <element signature="e#3967#3968#0" expanded="true" />
-            <element signature="e#4595#4596#0" expanded="true" />
-            <element signature="e#4623#4624#0" expanded="true" />
+            <element signature="e#5190#5191#0" expanded="true" />
+            <element signature="e#5218#5219#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/InterfaceGraphique.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="44" column="14" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/MoteurGraphique.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Constante.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
         </state>
       </provider>
     </entry>

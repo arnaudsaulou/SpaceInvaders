@@ -1,7 +1,7 @@
 public class Constante {
 
-    public static final int ESPACEJEU_LONGUEUR = 150;
-    public static final int ESPACEJEU_HAUTEUR = 100;
+    public static final int ESPACEJEU_LONGUEUR = 500;
+    public static final int ESPACEJEU_HAUTEUR = 500;
 
     public static final int VAISSEAU_LONGUEUR = 30;
     public static final int VAISSEAU_HAUTEUR = 20;
@@ -13,7 +13,7 @@ public class Constante {
 
     public static final char MARQUE_MISSILE = 'M';
 
-    public static final int MISSILE_LONGUEUR = 2;
-    public static final int MISSILE_HAUTEUR = 4;
-    public static final int MISSILE_VITESSE = 20;
+    public static final int MISSILE_LONGUEUR = 4;
+    public static final int MISSILE_HAUTEUR = 6;
+    public static final int MISSILE_VITESSE = 10;
 }
