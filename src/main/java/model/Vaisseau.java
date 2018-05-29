@@ -1,3 +1,5 @@
+package model;
+
 import utils.MissileException;
 
 public class Vaisseau extends Sprite {

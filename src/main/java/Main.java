@@ -1,3 +1,6 @@
+import model.Constante;
+import model.DessinSpaceInvaders;
+import model.SpaceInvaders;
 import moteurJeu.MoteurGraphique;
 
 public class Main {

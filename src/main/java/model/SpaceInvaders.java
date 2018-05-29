@@ -1,3 +1,5 @@
+package model;
+
 import moteurJeu.Commande;
 import moteurJeu.Jeu;
 import utils.DebordementEspaceJeuException;
@@ -10,6 +12,7 @@ public class SpaceInvaders implements Jeu {
     int hauteur;
     Vaisseau vaisseau;
     Missile missile;
+    Envahisseur envahisseur;
 
     public SpaceInvaders(int longueur, int hauteur) {
         this.longueur = longueur;
@@ -20,25 +23,37 @@ public class SpaceInvaders implements Jeu {
         Position positionVaisseau = new Position(this.longueur / 2, this.hauteur - 1);
         Dimension dimensionVaisseau = new Dimension(Constante.VAISSEAU_LONGUEUR, Constante.VAISSEAU_HAUTEUR);
         positionnerUnNouveauVaisseau(dimensionVaisseau, positionVaisseau, Constante.VAISSEAU_VITESSE);
+
+        Position positionEnvahisseur = new Position(this.longueur / 2, Constante.ENVAHISSEUR_HAUTEUR);
+        Dimension dimensionEnvahisseur = new Dimension(Constante.ENVAHISSEUR_LONGUEUR, Constante.ENVAHISSEUR_HAUTEUR);
+        positionnerUnNouvelEnvahisseur(dimensionEnvahisseur, positionEnvahisseur, Constante.ENVAHISSEUR_VITESSE);
     }
 
     public void positionnerUnNouveauVaisseau(Dimension dimension, Position position, int vitesse) {
+        positionnerUnNouvelElement(dimension, position);
+        this.vaisseau = new Vaisseau(dimension, position, vitesse);
+    }
+
+    public void positionnerUnNouvelEnvahisseur(Dimension dimension, Position position, int vitesse) {
+        positionnerUnNouvelElement(dimension, position);
+        this.envahisseur = new Envahisseur(dimension, position, vitesse);
+    }
+
+    public void positionnerUnNouvelElement(Dimension dimension, Position position) {
 
         int x = position.abscisse();
         int y = position.ordonnee();
 
         if (!estDansEspaceJeu(x, y))
-            throw new HorsEspaceJeuException("La position du vaisseau est en dehors de l'espace jeu");
+            throw new HorsEspaceJeuException("La position de l'envahisseur est en dehors de l'espace jeu");
 
-        int longueurVaisseau = dimension.longueur();
-        int hauteurVaisseau = dimension.hauteur();
+        int longueurElement = dimension.longueur();
+        int hauteurElement = dimension.hauteur();
 
-        if (!estDansEspaceJeu(x + longueurVaisseau - 1, y))
-            throw new DebordementEspaceJeuException("Le vaisseau déborde de l'espace jeu vers la droite à cause de sa longueur");
-        if (!estDansEspaceJeu(x, y - hauteurVaisseau + 1))
-            throw new DebordementEspaceJeuException("Le vaisseau déborde de l'espace jeu vers le bas à cause de sa hauteur");
-
-        vaisseau = new Vaisseau(dimension, position, vitesse);
+        if (!estDansEspaceJeu(x + longueurElement - 1, y))
+            throw new DebordementEspaceJeuException("L'élément déborde de l'espace jeu vers la droite à cause de sa longueur");
+        if (!estDansEspaceJeu(x, y - hauteurElement + 1))
+            throw new DebordementEspaceJeuException("L'élément déborde de l'espace jeu vers le bas à cause de sa hauteur");
     }
 
     private boolean estDansEspaceJeu(int x, int y) {
@@ -51,6 +66,8 @@ public class SpaceInvaders implements Jeu {
             marque = Constante.MARQUE_VAISSEAU;
         else if (this.aUnMissileQuiOccupeLaPosition(x, y))
             marque = Constante.MARQUE_MISSILE;
+        else if (this.aUnEnvahisseurQuiOccupeLaPosition(x, y))
+            marque = Constante.MARQUE_ENVAHISSEUR;
         else marque = Constante.MARQUE_VIDE;
         return marque;
     }
@@ -63,12 +80,20 @@ public class SpaceInvaders implements Jeu {
         return this.aUnMissile() && missile.occupeLaPosition(x, y);
     }
 
+    private boolean aUnEnvahisseurQuiOccupeLaPosition(int x, int y) {
+        return this.aUnEnvahisseur() && envahisseur.occupeLaPosition(x, y);
+    }
+
     public boolean aUnVaisseau() {
         return vaisseau != null;
     }
 
     public boolean aUnMissile() {
         return missile != null;
+    }
+
+    public boolean aUnEnvahisseur() {
+        return envahisseur != null;
     }
 
     //TODO
@@ -113,6 +138,10 @@ public class SpaceInvaders implements Jeu {
         return this.missile;
     }
 
+    public Envahisseur recupereEnvahisseur() {
+        return this.envahisseur;
+    }
+
     public void tirerUnMissile(Dimension dimensionMissile, int vitesseMissile) {
 
         if ((vaisseau.hauteur() + dimensionMissile.hauteur()) > this.hauteur) {
@@ -123,12 +152,42 @@ public class SpaceInvaders implements Jeu {
     }
 
     public void deplacerMissile() {
-        if (missile.ordonneeLaPlusHaute() + Direction.HAUT_ECRAN.valeur() <= 0) {
-            missile = null;
+        if (this.missile.ordonneeLaPlusHaute() + Direction.HAUT_ECRAN.valeur() <= 0) {
+            this.missile = null;
         } else {
-            missile.deplacerVerticalementVers(Direction.HAUT_ECRAN);
+            this.missile.deplacerVerticalementVers(Direction.HAUT_ECRAN);
         }
     }
+
+    public void deplacerEnvahisseur() {
+
+        if (this.envahisseur.getDirectionDeplacement() == Direction.DROITE) {
+            if (peutPasSeDeplacerADroite()) {
+                this.envahisseur.inverserDirectionDeplacement();
+                this.envahisseur.deplacerHorizontalementVers(Direction.GAUCHE);
+            } else {
+                this.envahisseur.deplacerHorizontalementVers(Direction.DROITE);
+            }
+        } else {
+            if (peutPasSeDeplacerAGauche()) {
+                this.envahisseur.inverserDirectionDeplacement();
+                this.envahisseur.deplacerHorizontalementVers(Direction.DROITE);
+            } else {
+                this.envahisseur.deplacerHorizontalementVers(Direction.GAUCHE);
+            }
+        }
+
+
+    }
+
+    private boolean peutPasSeDeplacerAGauche() {
+        return this.envahisseur.abscisseLaPlusAGauche() < 0;
+    }
+
+    private boolean peutPasSeDeplacerADroite() {
+        return this.envahisseur.abscisseLaPlusADroite() + Direction.DROITE.valeur() > hauteur;
+    }
+
 
     @Override
     public void evoluer(Commande commandeUser) {
@@ -149,12 +208,15 @@ public class SpaceInvaders implements Jeu {
             this.deplacerMissile();
         }
 
+        if (this.aUnEnvahisseur()) {
+            this.deplacerEnvahisseur();
+        }
+
     }
 
     @Override
     public boolean etreFini() {
         return false;
     }
-
 
 }
