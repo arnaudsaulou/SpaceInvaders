@@ -2,12 +2,14 @@ import moteurJeu.Commande;
 import moteurJeu.Jeu;
 import utils.DebordementEspaceJeuException;
 import utils.HorsEspaceJeuException;
+import utils.MissileException;
 
 public class SpaceInvaders implements Jeu {
 
     int longueur;
     int hauteur;
     Vaisseau vaisseau;
+    Missile missile;
 
     public SpaceInvaders(int longueur, int hauteur) {
         this.longueur = longueur;
@@ -47,8 +49,9 @@ public class SpaceInvaders implements Jeu {
         char marque;
         if (this.aUnVaisseauQuiOccupeLaPosition(x, y))
             marque = Constante.MARQUE_VAISSEAU;
-        else
-            marque = Constante.MARQUE_VIDE;
+        else if (this.aUnMissileQuiOccupeLaPosition(x, y))
+            marque = Constante.MARQUE_MISSILE;
+        else marque = Constante.MARQUE_VIDE;
         return marque;
     }
 
@@ -56,8 +59,16 @@ public class SpaceInvaders implements Jeu {
         return this.aUnVaisseau() && vaisseau.occupeLaPosition(x, y);
     }
 
+    private boolean aUnMissileQuiOccupeLaPosition(int x, int y) {
+        return this.aUnMissile() && missile.occupeLaPosition(x, y);
+    }
+
     public boolean aUnVaisseau() {
         return vaisseau != null;
+    }
+
+    public boolean aUnMissile() {
+        return missile != null;
     }
 
     //TODO
@@ -98,6 +109,19 @@ public class SpaceInvaders implements Jeu {
         return this.vaisseau;
     }
 
+    public Missile recupererMissile() {
+        return this.missile;
+    }
+
+    public void tirerUnMissile(Dimension dimensionMissile, int vitesseMissile) {
+
+        if ((vaisseau.hauteur() + dimensionMissile.hauteur()) > this.hauteur) {
+            throw new MissileException("Pas assez de hauteur libre entre le vaisseau et le haut de l'espace jeu pour tirer le missile");
+        }
+
+        this.missile = this.vaisseau.tirerUnMissile(dimensionMissile, vitesseMissile);
+    }
+
     @Override
     public void evoluer(Commande commandeUser) {
 
@@ -109,6 +133,9 @@ public class SpaceInvaders implements Jeu {
             deplacerVaisseauVersLaDroite();
         }
 
+        if (commandeUser.tir) {
+            tirerUnMissile(new Dimension(Constante.MISSILE_LONGUEUR, Constante.MISSILE_HAUTEUR), Constante.MISSILE_VITESSE);
+        }
     }
 
     @Override
