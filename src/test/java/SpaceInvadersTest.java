@@ -281,6 +281,7 @@ public class SpaceInvadersTest {
 
         spaceinvaders.positionnerUnNouveauVaisseau(new Dimension(7, 2), new Position(5, 9), 1);
         spaceinvaders.tirerUnMissile(new Dimension(3, 2), 1);
+
         for (int i = 1; i <= 6; i++) {
             spaceinvaders.deplacerMissile();
         }
@@ -388,5 +389,6 @@ public class SpaceInvadersTest {
                 "...............\n" +
                 "...............\n", spaceinvaders.recupererEspaceJeuDansChaineASCII());
     }
+
 
 }

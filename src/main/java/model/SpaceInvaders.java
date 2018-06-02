@@ -24,7 +24,7 @@ public class SpaceInvaders implements Jeu {
         Dimension dimensionVaisseau = new Dimension(Constante.VAISSEAU_LONGUEUR, Constante.VAISSEAU_HAUTEUR);
         positionnerUnNouveauVaisseau(dimensionVaisseau, positionVaisseau, Constante.VAISSEAU_VITESSE);
 
-        Position positionEnvahisseur = new Position(this.longueur / 2, Constante.ENVAHISSEUR_HAUTEUR);
+        Position positionEnvahisseur = new Position(this.longueur / 2, Constante.ENVAHISSEUR_HAUTEUR + 50);
         Dimension dimensionEnvahisseur = new Dimension(Constante.ENVAHISSEUR_LONGUEUR, Constante.ENVAHISSEUR_HAUTEUR);
         positionnerUnNouvelEnvahisseur(dimensionEnvahisseur, positionEnvahisseur, Constante.ENVAHISSEUR_VITESSE);
     }
@@ -60,7 +60,7 @@ public class SpaceInvaders implements Jeu {
         return (((x >= 0) && (x < longueur)) && ((y >= 0) && (y < hauteur)));
     }
 
-    private char recupererMarqueDeLaPosition(int x, int y) {
+    public char recupererMarqueDeLaPosition(int x, int y) {
         char marque;
         if (this.aUnVaisseauQuiOccupeLaPosition(x, y))
             marque = Constante.MARQUE_VAISSEAU;
@@ -155,7 +155,11 @@ public class SpaceInvaders implements Jeu {
         if (this.missile.ordonneeLaPlusHaute() + Direction.HAUT_ECRAN.valeur() <= 0) {
             this.missile = null;
         } else {
-            this.missile.deplacerVerticalementVers(Direction.HAUT_ECRAN);
+            if (Collision.detecterCollision(this.envahisseur, this.missile)) {
+                this.missile = null;
+            } else {
+                this.missile.deplacerVerticalementVers(Direction.HAUT_ECRAN);
+            }
         }
     }
 
