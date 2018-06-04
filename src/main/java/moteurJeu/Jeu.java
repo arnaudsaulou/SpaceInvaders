@@ -18,4 +18,5 @@ public interface Jeu {
      * @return true si et seulement si le jeu est fini
      */
     boolean etreFini();
+
 }

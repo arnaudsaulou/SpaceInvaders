@@ -6,6 +6,8 @@ import utils.DebordementEspaceJeuException;
 import utils.HorsEspaceJeuException;
 import utils.MissileException;
 
+import static java.lang.System.exit;
+
 public class SpaceInvaders implements Jeu {
 
     int longueur;
@@ -24,9 +26,17 @@ public class SpaceInvaders implements Jeu {
         Dimension dimensionVaisseau = new Dimension(Constante.VAISSEAU_LONGUEUR, Constante.VAISSEAU_HAUTEUR);
         positionnerUnNouveauVaisseau(dimensionVaisseau, positionVaisseau, Constante.VAISSEAU_VITESSE);
 
-        Position positionEnvahisseur = new Position(this.longueur / 2, Constante.ENVAHISSEUR_HAUTEUR + 50);
+        Position positionEnvahisseur = new Position(this.longueur / 2, Constante.ENVAHISSEUR_HAUTEUR + Constante.ENVAHISSEUR_HAUTEUR);
         Dimension dimensionEnvahisseur = new Dimension(Constante.ENVAHISSEUR_LONGUEUR, Constante.ENVAHISSEUR_HAUTEUR);
         positionnerUnNouvelEnvahisseur(dimensionEnvahisseur, positionEnvahisseur, Constante.ENVAHISSEUR_VITESSE);
+
+        validationVitesseMissile();
+    }
+
+    private void validationVitesseMissile() {
+        if (Constante.MISSILE_VITESSE > Constante.ENVAHISSEUR_HAUTEUR) {
+            throw new MissileException("Vitesse du missile spérieur à hauteur de l'envahisseur");
+        }
     }
 
     public void positionnerUnNouveauVaisseau(Dimension dimension, Position position, int vitesse) {
@@ -45,7 +55,7 @@ public class SpaceInvaders implements Jeu {
         int y = position.ordonnee();
 
         if (!estDansEspaceJeu(x, y))
-            throw new HorsEspaceJeuException("La position de l'envahisseur est en dehors de l'espace jeu");
+            throw new HorsEspaceJeuException("La position de l'élément est en dehors de l'espace jeu");
 
         int longueurElement = dimension.longueur();
         int hauteurElement = dimension.hauteur();
@@ -96,14 +106,9 @@ public class SpaceInvaders implements Jeu {
         return envahisseur != null;
     }
 
-    //TODO
-    /*@Override
-    public String toString() {
-        return recupererEspaceJeuDansChaineASCII();
-    }*/
-
     public String recupererEspaceJeuDansChaineASCII() {
         StringBuilder espaceDeJeu = new StringBuilder();
+
         for (int y = 0; y < hauteur; y++) {
             for (int x = 0; x < longueur; x++) {
                 espaceDeJeu.append(recupererMarqueDeLaPosition(x, y));
@@ -144,7 +149,7 @@ public class SpaceInvaders implements Jeu {
 
     public void tirerUnMissile(Dimension dimensionMissile, int vitesseMissile) {
 
-        if ((vaisseau.hauteur() + dimensionMissile.hauteur()) > this.hauteur) {
+        if ((this.vaisseau.hauteur() + dimensionMissile.hauteur()) > this.hauteur) {
             throw new MissileException("Pas assez de hauteur libre entre le vaisseau et le haut de l'espace jeu pour tirer le missile");
         }
 
@@ -152,36 +157,33 @@ public class SpaceInvaders implements Jeu {
     }
 
     public void deplacerMissile() {
-        if (this.missile.ordonneeLaPlusHaute() + Direction.HAUT_ECRAN.valeur() <= 0) {
-            this.missile = null;
-        } else {
-            if (Collision.detecterCollision(this.envahisseur, this.missile)) {
-                this.missile = null;
-            } else {
+        if (this.aUnMissile()) {
+            if (this.estDansEspaceJeu(this.missile.abscisseLaPlusAGauche(), this.missile.ordonneeLaPlusBasse() + Direction.HAUT_ECRAN.valeur())) {
                 this.missile.deplacerVerticalementVers(Direction.HAUT_ECRAN);
+            } else {
+                this.missile = null;
             }
         }
     }
 
     public void deplacerEnvahisseur() {
-
-        if (this.envahisseur.getDirectionDeplacement() == Direction.DROITE) {
-            if (peutPasSeDeplacerADroite()) {
-                this.envahisseur.inverserDirectionDeplacement();
-                this.envahisseur.deplacerHorizontalementVers(Direction.GAUCHE);
+        if (this.aUnEnvahisseur()) {
+            if (this.envahisseur.getDirectionDeplacement() == Direction.DROITE) {
+                if (peutPasSeDeplacerADroite()) {
+                    this.envahisseur.inverserDirectionDeplacement();
+                    this.envahisseur.deplacerHorizontalementVers(Direction.GAUCHE);
+                } else {
+                    this.envahisseur.deplacerHorizontalementVers(Direction.DROITE);
+                }
             } else {
-                this.envahisseur.deplacerHorizontalementVers(Direction.DROITE);
-            }
-        } else {
-            if (peutPasSeDeplacerAGauche()) {
-                this.envahisseur.inverserDirectionDeplacement();
-                this.envahisseur.deplacerHorizontalementVers(Direction.DROITE);
-            } else {
-                this.envahisseur.deplacerHorizontalementVers(Direction.GAUCHE);
+                if (peutPasSeDeplacerAGauche()) {
+                    this.envahisseur.inverserDirectionDeplacement();
+                    this.envahisseur.deplacerHorizontalementVers(Direction.DROITE);
+                } else {
+                    this.envahisseur.deplacerHorizontalementVers(Direction.GAUCHE);
+                }
             }
         }
-
-
     }
 
     private boolean peutPasSeDeplacerAGauche() {
@@ -208,19 +210,27 @@ public class SpaceInvaders implements Jeu {
             tirerUnMissile(new Dimension(Constante.MISSILE_LONGUEUR, Constante.MISSILE_HAUTEUR), Constante.MISSILE_VITESSE);
         }
 
-        if (this.aUnMissile()) {
-            this.deplacerMissile();
-        }
-
-        if (this.aUnEnvahisseur()) {
-            this.deplacerEnvahisseur();
-        }
-
+        this.deplacerMissile();
+        this.deplacerEnvahisseur();
     }
 
     @Override
     public boolean etreFini() {
-        return false;
+        if (Collision.detecterCollision(this.missile, this.envahisseur)) {
+            this.missile = null;
+            this.envahisseur = null;
+            this.vaisseau = null;
+            //TODO
+            // Un peut Hard our le momemnt
+            exit(0);
+            return true;
+        } else {
+            return false;
+        }
     }
 
+    @Override
+    public String toString() {
+        return recupererEspaceJeuDansChaineASCII();
+    }
 }

@@ -3,15 +3,16 @@ package model;
 public class Collision {
 
     public static boolean detecterCollision(Sprite sprite1, Sprite sprite2) {
-        if (sprite1 == null || sprite2 == null)
+        if (sprite1 == null || sprite2 == null) {
             return false;
-
-        return collisionSpriteAbscisse(sprite1, sprite2) && collisionSpriteOrdonnee(sprite1, sprite2);
+        } else {
+            return collisionSpriteOrdonnee(sprite1, sprite2) && collisionSpriteAbscisse(sprite1, sprite2);
+        }
     }
 
     public static boolean collisionSpriteOrdonnee(Sprite sprite1, Sprite sprite2) {
-        return ordonneePlusBasseDeSprite1DansIntervalOrdoneeSprite2(sprite2, sprite1) ||
-                ordonneePlusHauteDeSprite1DansIntervalOrdoneeSprite2(sprite2, sprite1);
+        return ordonneePlusBasseDeSprite1DansIntervalOrdoneeSprite2(sprite1, sprite2) ||
+                ordonneePlusHauteDeSprite1DansIntervalOrdoneeSprite2(sprite1, sprite2);
     }
 
     public static boolean collisionSpriteAbscisse(Sprite sprite1, Sprite sprite2) {
@@ -38,4 +39,5 @@ public class Collision {
         return sprite1.abscisseLaPlusAGauche() >= sprite2.abscisseLaPlusAGauche() &&
                 sprite1.abscisseLaPlusAGauche() <= sprite2.abscisseLaPlusADroite();
     }
+
 }
