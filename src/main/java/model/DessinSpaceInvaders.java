@@ -4,6 +4,7 @@ import moteurJeu.DessinJeu;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.util.List;
 
 public class DessinSpaceInvaders implements DessinJeu {
 
@@ -20,8 +21,10 @@ public class DessinSpaceInvaders implements DessinJeu {
             this.dessinerUnVaisseau(vaisseau, im);
         }
         if (this.jeu.aUnMissile()) {
-            Missile missile = this.jeu.recupererMissile();
-            this.dessinerUnMissile(missile, im);
+            List<Missile> missile = this.jeu.recupererMissile();
+            for (int numMissile = 0; numMissile < missile.size(); numMissile++) {
+                this.dessinerUnMissile(missile.get(numMissile), im);
+            }
         }
         if (this.jeu.aUnEnvahisseur()) {
             Envahisseur envahisseur = this.jeu.recupereEnvahisseur();

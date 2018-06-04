@@ -6,19 +6,21 @@ import utils.DebordementEspaceJeuException;
 import utils.HorsEspaceJeuException;
 import utils.MissileException;
 
-import static java.lang.System.exit;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SpaceInvaders implements Jeu {
 
     int longueur;
     int hauteur;
     Vaisseau vaisseau;
-    Missile missile;
+    List<Missile> missile;
     Envahisseur envahisseur;
 
     public SpaceInvaders(int longueur, int hauteur) {
         this.longueur = longueur;
         this.hauteur = hauteur;
+        this.missile = new ArrayList<Missile>();
     }
 
     public void initialiserJeu() {
@@ -32,6 +34,7 @@ public class SpaceInvaders implements Jeu {
 
         validationVitesseMissile();
     }
+
 
     private void validationVitesseMissile() {
         if (Constante.MISSILE_VITESSE > Constante.ENVAHISSEUR_HAUTEUR) {
@@ -87,7 +90,15 @@ public class SpaceInvaders implements Jeu {
     }
 
     private boolean aUnMissileQuiOccupeLaPosition(int x, int y) {
-        return this.aUnMissile() && missile.occupeLaPosition(x, y);
+        boolean positionOccupe = false;
+        int numMissile = 0;
+
+        while (!positionOccupe && numMissile < this.missile.size()) {
+            positionOccupe = this.aUnMissile() && missile.get(numMissile).occupeLaPosition(x, y);
+            numMissile++;
+        }
+
+        return positionOccupe;
     }
 
     private boolean aUnEnvahisseurQuiOccupeLaPosition(int x, int y) {
@@ -99,7 +110,7 @@ public class SpaceInvaders implements Jeu {
     }
 
     public boolean aUnMissile() {
-        return missile != null;
+        return this.missile != null;
     }
 
     public boolean aUnEnvahisseur() {
@@ -139,7 +150,7 @@ public class SpaceInvaders implements Jeu {
         return this.vaisseau;
     }
 
-    public Missile recupererMissile() {
+    public List<Missile> recupererMissile() {
         return this.missile;
     }
 
@@ -153,15 +164,17 @@ public class SpaceInvaders implements Jeu {
             throw new MissileException("Pas assez de hauteur libre entre le vaisseau et le haut de l'espace jeu pour tirer le missile");
         }
 
-        this.missile = this.vaisseau.tirerUnMissile(dimensionMissile, vitesseMissile);
+        this.missile.add(this.vaisseau.tirerUnMissile(dimensionMissile, vitesseMissile));
     }
 
     public void deplacerMissile() {
         if (this.aUnMissile()) {
-            if (this.estDansEspaceJeu(this.missile.abscisseLaPlusAGauche(), this.missile.ordonneeLaPlusBasse() + Direction.HAUT_ECRAN.valeur())) {
-                this.missile.deplacerVerticalementVers(Direction.HAUT_ECRAN);
-            } else {
-                this.missile = null;
+            for (int numMissile = 0; numMissile < this.missile.size(); numMissile++) {
+                if (this.estDansEspaceJeu(this.missile.get(numMissile).abscisseLaPlusAGauche(), this.missile.get(numMissile).ordonneeLaPlusBasse() + Direction.HAUT_ECRAN.valeur())) {
+                    this.missile.get(numMissile).deplacerVerticalementVers(Direction.HAUT_ECRAN);
+                } else {
+                    this.missile.remove(numMissile);
+                }
             }
         }
     }
@@ -216,17 +229,26 @@ public class SpaceInvaders implements Jeu {
 
     @Override
     public boolean etreFini() {
-        if (Collision.detecterCollision(this.missile, this.envahisseur)) {
-            this.missile = null;
-            this.envahisseur = null;
-            this.vaisseau = null;
-            //TODO
-            // Un peut Hard our le momemnt
-            exit(0);
-            return true;
-        } else {
-            return false;
+        boolean collision = false;
+        int numMissile = 0;
+
+        if (this.aUnMissile()) {
+            while (!collision && numMissile < this.missile.size()) {
+
+                if (Collision.detecterCollision(this.missile.get(numMissile), this.envahisseur)) {
+                    collision = true;
+                    this.missile.remove(numMissile);
+                    this.envahisseur = null;
+                    this.vaisseau = null;
+
+                    //TODO
+                    // Un peut Hard our le momemnt
+                    //exit(0);
+                }
+                numMissile++;
+            }
         }
+        return collision;
     }
 
     @Override
