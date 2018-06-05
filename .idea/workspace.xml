@@ -3,13 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="719ca721-7d8c-44e7-8a6c-14f63b6fdde8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class_Diagram_SpaceInvaders.png" beforeDir="false" afterPath="$PROJECT_DIR$/Class_Diagram_SpaceInvaders.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpaceInvader/src/main/java/SpaceInvaders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpaceInvader/src/main/java/Vaisseau.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpaceInvader/src/test/java/SpaceInvadersTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpaceInvader/target/classes/SpaceInvaders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpaceInvader/target/classes/Vaisseau.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpaceInvader/target/test-classes/SpaceInvadersTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Word_Cloud_SpaceInvader.png" beforeDir="false" afterPath="$PROJECT_DIR$/Word_Cloud_SpaceInvader.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Constante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Constante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/DessinSpaceInvaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/DessinSpaceInvaders.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/SpaceInvaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/SpaceInvaders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CollisionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CollisionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MissileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MissileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/DessinSpaceInvaders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/DessinSpaceInvaders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moteurJeu/MoteurGraphique.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moteurJeu/MoteurGraphique.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Constante.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Constante.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/model/SpaceInvaders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/SpaceInvaders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moteurJeu/MoteurGraphique.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moteurJeu/MoteurGraphique.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,21 +37,69 @@
       <file leaf-file-name="SpaceInvaders.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/SpaceInvaders.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-195">
-              <caret line="181" column="35" selection-start-line="181" selection-start-column="16" selection-end-line="181" selection-end-column="35" />
+            <state relative-caret-position="172">
+              <caret line="166" column="32" selection-start-line="166" selection-start-column="32" selection-end-line="166" selection-end-column="32" />
               <folding>
-                <element signature="e#9152#9153#0" expanded="true" />
-                <element signature="e#9210#9211#0" expanded="true" />
+                <element signature="e#4202#4203#0" expanded="true" />
+                <element signature="e#4248#4249#0" expanded="true" />
+                <element signature="e#7834#7835#0" expanded="true" />
+                <element signature="e#7901#7902#0" expanded="true" />
+                <element signature="e#9181#9182#0" expanded="true" />
+                <element signature="e#9239#9240#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constante.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Constante.java">
+      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+            <state relative-caret-position="-7">
+              <caret line="439" selection-start-line="439" selection-end-line="439" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vaisseau.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Vaisseau.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MissileTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/MissileTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollisionTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/CollisionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1014">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#290#291#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpaceInvadersTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="236" selection-start-line="236" selection-end-line="236" />
             </state>
           </provider>
         </entry>
@@ -77,6 +132,7 @@
       <find>Collision</find>
       <find>Colli</find>
       <find>Place</find>
+      <find>aUnMissile</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -113,19 +169,19 @@
         <option value="$PROJECT_DIR$/src/main/java/Constante.java" />
         <option value="$PROJECT_DIR$/src/test/java/VaisseauTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Envahisseur.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Vaisseau.java" />
         <option value="$PROJECT_DIR$/src/main/java/moteurJeu/Jeu.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Missile.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Sprite.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Collision.java" />
-        <option value="$PROJECT_DIR$/src/main/java/moteurJeu/MoteurGraphique.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/MissileException.java" />
         <option value="$PROJECT_DIR$/src/test/java/EnvahisseurTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/DessinSpaceInvaders.java" />
         <option value="$PROJECT_DIR$/src/test/java/CollisionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/MissileTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/moteurJeu/MoteurGraphique.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Constante.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Vaisseau.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/SpaceInvaders.java" />
       </list>
     </option>
@@ -170,8 +226,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,6 +292,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -471,7 +527,9 @@
       <workItem from="1528019595441" duration="1769000" />
       <workItem from="1528109166268" duration="374000" />
       <workItem from="1528116394790" duration="2806000" />
-      <workItem from="1528132014488" duration="11952000" />
+      <workItem from="1528132014488" duration="12048000" />
+      <workItem from="1528144518750" duration="110000" />
+      <workItem from="1528205908668" duration="4897000" />
     </task>
     <task id="LOCAL-00001" summary="Récupération Story 2">
       <created>1525685629633</created>
@@ -585,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528141580829</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Tirer plusieurs missiles + Detection collisions plusieurs missiles + //TODO chevauchement missiles">
+      <created>1528144085782</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1528144085782</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -621,7 +686,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65396000" />
+    <option name="totallyTimeSpent" value="70499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -638,20 +703,20 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.3297546" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3297546" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2987897" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24054463" />
       <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3297546" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.44018406" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29447854" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32980332" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297546" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -678,26 +743,13 @@
     <MESSAGE value="Ajout d'un envahisseur &#10;+ Déplacement auto de ce dernier &#10;+ Implémentation graphique de ce dernier" />
     <MESSAGE value="Detection des collisions entre sprite" />
     <MESSAGE value="Correction beug vitesse collisions entre sprite + Fin de partie" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction beug vitesse collisions entre sprite + Fin de partie" />
+    <MESSAGE value="Tirer plusieurs missiles + Detection collisions plusieurs missiles + //TODO chevauchement missiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tirer plusieurs missiles + Detection collisions plusieurs missiles + //TODO chevauchement missiles" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/SpaceInvaders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/HorsEspaceJeuException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3451">
@@ -1154,13 +1206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/DessinJeu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Envahisseur.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1242,20 +1287,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/MoteurGraphique.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/EnvahisseurTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/EnvahisseurTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/MissileException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1284,13 +1316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Vaisseau.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/DessinSpaceInvaders.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1305,16 +1330,284 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java">
+    <entry file="uml://JAVA/model">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>model</OriginalElement>
+          <nodes>
+            <node x="191.00485389610412" y="0.0">model.Direction</node>
+            <node x="351.3486038961041" y="845.5">model.Envahisseur</node>
+            <node x="0.0" y="1098.0">model.Constante</node>
+            <node x="637.3486038961041" y="814.0">model.Collision</node>
+            <node x="1154.3486038961041" y="370.0">model.Sprite</node>
+            <node x="684.3486038961041" y="1580.0">model.SpaceInvaders</node>
+            <node x="1058.2800324675322" y="44.0">model.Dimension</node>
+            <node x="1344.6343181818183" y="880.0">model.Missile</node>
+            <node x="1427.5300324675322" y="22.0">model.Position</node>
+            <node x="710.3486038961041" y="2602.0">Main</node>
+            <node x="804.3486038961041" y="2388.0">model.DessinSpaceInvaders</node>
+            <node x="1190.242435064935" y="1240.5">model.Vaisseau</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="model.Envahisseur" target="model.Dimension">
+              <point x="-53.200000000000045" y="-60.5" />
+              <point x="431.1486038961041" y="794.0" />
+              <point x="401.0" y="794.0" />
+              <point x="401.0" y="320.0" />
+              <point x="1118.6371753246754" y="320.0" />
+              <point x="-24.14285714285711" y="71.0" />
+            </edge>
+            <edge source="model.Missile" target="model.Sprite">
+              <point x="-90.0" y="-26.0" />
+              <point x="1374.6343181818183" y="794.0" />
+              <point x="1393.9914610389612" y="794.0" />
+              <point x="87.14285714285722" y="192.0" />
+            </edge>
+            <edge source="model.DessinSpaceInvaders" target="model.Missile">
+              <point x="146.79999999999995" y="-82.0" />
+              <point x="1134.648603896104" y="2368.0" />
+              <point x="1636.5550324675323" y="2368.0" />
+              <point x="1636.5550324675323" y="1058.0" />
+              <point x="1560.6343181818183" y="1058.0" />
+              <point x="96.0" y="26.0" />
+            </edge>
+            <edge source="model.SpaceInvaders" target="model.Dimension">
+              <point x="-107.20000000000005" y="-379.0" />
+              <point x="778.1486038961041" y="1530.0" />
+              <point x="328.54056818181834" y="1530.0" />
+              <point x="328.54056818181834" y="310.0" />
+              <point x="1094.494318181818" y="310.0" />
+              <point x="-48.28571428571428" y="71.0" />
+            </edge>
+            <edge source="model.SpaceInvaders" target="model.Constante">
+              <point x="-187.60000000000014" y="-379.0" />
+              <point x="697.748603896104" y="1560.0" />
+              <point x="168.75" y="1560.0" />
+              <point x="56.25" y="191.0" />
+            </edge>
+            <edge source="Main" target="model.SpaceInvaders">
+              <point x="-33.39999999999998" y="-26.0" />
+              <point x="760.4486038961041" y="2582.0" />
+              <point x="782.8486038961041" y="2582.0" />
+              <point x="782.8486038961041" y="2368.0" />
+              <point x="734.5986038961041" y="2368.0" />
+              <point x="-150.75" y="379.0" />
+            </edge>
+            <edge source="model.SpaceInvaders" target="model.Direction">
+              <point x="-160.80000000000018" y="-379.0" />
+              <point x="724.5486038961039" y="1550.0" />
+              <point x="235.5" y="1550.0" />
+              <point x="235.5" y="350.0" />
+              <point x="214.3381872294375" y="350.0" />
+              <point x="-46.66666666666663" y="115.0" />
+            </edge>
+            <edge source="model.SpaceInvaders" target="model.Envahisseur">
+              <point x="-53.600000000000136" y="-379.0" />
+              <point x="831.748603896104" y="1510.0" />
+              <point x="489.84860389610407" y="1510.0" />
+              <point x="489.84860389610407" y="1078.0" />
+              <point x="517.5986038961041" y="1078.0" />
+              <point x="33.25" y="60.5" />
+            </edge>
+            <edge source="model.Vaisseau" target="model.Sprite">
+              <point x="-100.85714285714289" y="-48.5" />
+              <point x="1265.8852922077922" y="1018.0" />
+              <point x="1323.1343181818183" y="1018.0" />
+              <point x="1323.1343181818183" y="794.0" />
+              <point x="1306.8486038961041" y="794.0" />
+              <point x="0.0" y="192.0" />
+            </edge>
+            <edge source="model.Sprite" target="model.Dimension">
+              <point x="0.0" y="-192.0" />
+              <point x="1306.8486038961041" y="260.0" />
+              <point x="1191.0657467532467" y="260.0" />
+              <point x="48.285714285714334" y="71.0" />
+            </edge>
+            <edge source="model.Vaisseau" target="model.Missile">
+              <point x="0.0" y="-48.5" />
+              <point x="1366.742435064935" y="1048.0" />
+              <point x="1416.6343181818183" y="1048.0" />
+              <point x="-48.0" y="26.0" />
+            </edge>
+            <edge source="model.Vaisseau" target="model.Position">
+              <point x="151.28571428571422" y="-48.5" />
+              <point x="1518.0281493506493" y="1078.0" />
+              <point x="1654.3262824675326" y="1078.0" />
+              <point x="1654.3262824675326" y="330.0" />
+              <point x="1572.5925324675322" y="330.0" />
+              <point x="39.5625" y="93.0" />
+            </edge>
+            <edge source="model.SpaceInvaders" target="model.Collision">
+              <point x="0.0" y="-379.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="model.DessinSpaceInvaders" target="model.Vaisseau">
+              <point x="73.40000000000009" y="-82.0" />
+              <point x="1061.2486038961042" y="2358.0" />
+              <point x="1568.8553571428572" y="2358.0" />
+              <point x="1568.8553571428572" y="1530.0" />
+              <point x="1499.117435064935" y="1530.0" />
+              <point x="132.375" y="48.5" />
+            </edge>
+            <edge source="model.SpaceInvaders" target="model.Position">
+              <point x="160.79999999999995" y="-379.0" />
+              <point x="1046.148603896104" y="1550.0" />
+              <point x="1695.9121753246752" y="1550.0" />
+              <point x="1695.9121753246752" y="320.0" />
+              <point x="1598.9675324675322" y="320.0" />
+              <point x="65.9375" y="93.0" />
+            </edge>
+            <edge source="Main" target="model.Constante">
+              <point x="-66.79999999999995" y="-26.0" />
+              <point x="727.0486038961042" y="2582.0" />
+              <point x="56.25" y="2582.0" />
+              <point x="-56.25" y="191.0" />
+            </edge>
+            <edge source="model.Sprite" target="model.Direction">
+              <point x="-122.0" y="-192.0" />
+              <point x="1184.8486038961041" y="280.0" />
+              <point x="307.67152056277075" y="280.0" />
+              <point x="46.66666666666666" y="115.0" />
+            </edge>
+            <edge source="model.Vaisseau" target="model.Dimension">
+              <point x="-151.28571428571422" y="-48.5" />
+              <point x="1215.4567207792209" y="1028.0" />
+              <point x="1143.8486038961041" y="1028.0" />
+              <point x="1143.8486038961041" y="320.0" />
+              <point x="1142.7800324675322" y="320.0" />
+              <point x="0.0" y="71.0" />
+            </edge>
+            <edge source="model.SpaceInvaders" target="model.Vaisseau">
+              <point x="53.59999999999991" y="-379.0" />
+              <point x="938.948603896104" y="1510.0" />
+              <point x="1234.367435064935" y="1510.0" />
+              <point x="-132.375" y="48.5" />
+            </edge>
+            <edge source="model.Envahisseur" target="model.Sprite">
+              <point x="53.19999999999999" y="-60.5" />
+              <point x="537.5486038961042" y="774.0" />
+              <point x="1176.1343181818183" y="774.0" />
+              <point x="-130.71428571428578" y="192.0" />
+            </edge>
+            <edge source="model.Sprite" target="model.Position">
+              <point x="122.0" y="-192.0" />
+              <point x="1428.8486038961041" y="350.0" />
+              <point x="1493.4675324675322" y="350.0" />
+              <point x="-39.5625" y="93.0" />
+            </edge>
+            <edge source="model.Missile" target="model.Dimension">
+              <point x="30.0" y="-26.0" />
+              <point x="1494.6343181818183" y="250.0" />
+              <point x="1215.2086038961038" y="250.0" />
+              <point x="72.42857142857144" y="71.0" />
+            </edge>
+            <edge source="Main" target="model.DessinSpaceInvaders">
+              <point x="33.39999999999998" y="-26.0" />
+              <point x="827.2486038961041" y="2572.0" />
+              <point x="896.0986038961041" y="2572.0" />
+              <point x="-91.75" y="82.0" />
+            </edge>
+            <edge source="model.DessinSpaceInvaders" target="model.SpaceInvaders">
+              <point x="-73.39999999999998" y="-82.0" />
+              <point x="914.4486038961041" y="2368.0" />
+              <point x="935.5986038961041" y="2368.0" />
+              <point x="50.25" y="379.0" />
+            </edge>
+            <edge source="model.DessinSpaceInvaders" target="model.Envahisseur">
+              <point x="-146.79999999999995" y="-82.0" />
+              <point x="841.0486038961042" y="2358.0" />
+              <point x="423.5786363636365" y="2358.0" />
+              <point x="423.5786363636365" y="1078.0" />
+              <point x="384.5986038961041" y="1078.0" />
+              <point x="-99.75" y="60.5" />
+            </edge>
+            <edge source="model.Collision" target="model.Sprite">
+              <point x="0.0" y="-92.0" />
+              <point x="885.3486038961041" y="794.0" />
+              <point x="1263.2771753246755" y="794.0" />
+              <point x="-43.571428571428555" y="192.0" />
+            </edge>
+            <edge source="model.Missile" target="model.Position">
+              <point x="90.0" y="-26.0" />
+              <point x="1554.6343181818183" y="794.0" />
+              <point x="1560.6286363636364" y="794.0" />
+              <point x="1560.6286363636364" y="350.0" />
+              <point x="1519.8425324675322" y="350.0" />
+              <point x="-13.1875" y="93.0" />
+            </edge>
+            <edge source="model.Envahisseur" target="model.Position">
+              <point x="0.0" y="-60.5" />
+              <point x="484.34860389610407" y="330.0" />
+              <point x="1440.7175324675322" y="330.0" />
+              <point x="-92.3125" y="93.0" />
+            </edge>
+            <edge source="model.SpaceInvaders" target="model.Missile">
+              <point x="134.0" y="-379.0" />
+              <point x="1019.3486038961041" y="1540.0" />
+              <point x="1553.742435064935" y="1540.0" />
+              <point x="1553.742435064935" y="1058.0" />
+              <point x="1512.6343181818183" y="1058.0" />
+              <point x="48.0" y="26.0" />
+            </edge>
+            <edge source="model.Envahisseur" target="model.Direction">
+              <point x="-106.39999999999998" y="-60.5" />
+              <point x="377.94860389610415" y="794.0" />
+              <point x="317.54056818181834" y="794.0" />
+              <point x="317.54056818181834" y="290.0" />
+              <point x="261.0048538961041" y="290.0" />
+              <point x="0.0" y="115.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.22372372372372373" x="768.0" y="1322.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/DessinJeu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="236" selection-start-line="236" selection-end-line="236" />
+        <state relative-caret-position="153">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Constante.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/moteurJeu/MoteurGraphique.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MissileTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CollisionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="-1014">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1324,32 +1617,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MissileTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="308">
+          <caret line="236" selection-start-line="236" selection-end-line="236" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Constante.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Vaisseau.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        <state relative-caret-position="476">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="439" selection-start-line="439" selection-end-line="439" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/SpaceInvaders.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-195">
-          <caret line="181" column="35" selection-start-line="181" selection-start-column="16" selection-end-line="181" selection-end-column="35" />
+        <state relative-caret-position="172">
+          <caret line="166" column="32" selection-start-line="166" selection-start-column="32" selection-end-line="166" selection-end-column="32" />
           <folding>
-            <element signature="e#9152#9153#0" expanded="true" />
-            <element signature="e#9210#9211#0" expanded="true" />
+            <element signature="e#4202#4203#0" expanded="true" />
+            <element signature="e#4248#4249#0" expanded="true" />
+            <element signature="e#7834#7835#0" expanded="true" />
+            <element signature="e#7901#7902#0" expanded="true" />
+            <element signature="e#9181#9182#0" expanded="true" />
+            <element signature="e#9239#9240#0" expanded="true" />
           </folding>
         </state>
       </provider>

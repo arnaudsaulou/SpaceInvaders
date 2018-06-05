@@ -110,7 +110,7 @@ public class SpaceInvaders implements Jeu {
     }
 
     public boolean aUnMissile() {
-        return this.missile != null;
+        return this.missile.size() > 0;
     }
 
     public boolean aUnEnvahisseur() {
@@ -164,6 +164,23 @@ public class SpaceInvaders implements Jeu {
             throw new MissileException("Pas assez de hauteur libre entre le vaisseau et le haut de l'espace jeu pour tirer le missile");
         }
 
+        if (this.aUnMissile()) {
+            if (peutTirerMissileSuivant()) {
+                ajouterMissileALaListe(dimensionMissile, vitesseMissile);
+            }
+        } else {
+            ajouterMissileALaListe(dimensionMissile, vitesseMissile);
+        }
+    }
+
+    private boolean peutTirerMissileSuivant() {
+        int ordoneeMinimalePourTirerMisileSuivant = Constante.ESPACEJEU_HAUTEUR - Constante.VAISSEAU_HAUTEUR - (2 * Constante.MISSILE_HAUTEUR);
+        int ordoneeLaPlusBasseDernierMissileTirer = this.missile.get(this.missile.size() - 1).ordonneeLaPlusHaute();
+
+        return ordoneeLaPlusBasseDernierMissileTirer < ordoneeMinimalePourTirerMisileSuivant;
+    }
+
+    private void ajouterMissileALaListe(Dimension dimensionMissile, int vitesseMissile) {
         this.missile.add(this.vaisseau.tirerUnMissile(dimensionMissile, vitesseMissile));
     }
 
@@ -240,10 +257,6 @@ public class SpaceInvaders implements Jeu {
                     this.missile.remove(numMissile);
                     this.envahisseur = null;
                     this.vaisseau = null;
-
-                    //TODO
-                    // Un peut Hard our le momemnt
-                    //exit(0);
                 }
                 numMissile++;
             }
