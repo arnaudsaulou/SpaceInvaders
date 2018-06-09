@@ -1,9 +1,9 @@
 package model;
 
 public abstract class Sprite {
-    private Position origine;
+    protected Position origine;
     protected Dimension dimension;
-    private int vitesse;
+    protected int vitesse;
 
     public Sprite(Dimension dimension, Position origine, int vitesse) {
         super();

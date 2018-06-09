@@ -55,6 +55,7 @@ public class MoteurGraphique {
             // met en attente
             Thread.sleep(15);
         }
+
     }
 
 }

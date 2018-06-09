@@ -20,15 +20,23 @@ public class DessinSpaceInvaders implements DessinJeu {
             Vaisseau vaisseau = this.jeu.recupererVaisseau();
             this.dessinerUnVaisseau(vaisseau, im);
         }
-        if (this.jeu.aUnMissile()) {
-            List<Missile> missile = this.jeu.recupererMissile();
-            for (int numMissile = 0; numMissile < missile.size(); numMissile++) {
-                this.dessinerUnMissile(missile.get(numMissile), im);
+        if (this.jeu.aUnMissileVaisseau()) {
+            List<Missile> missileVaisseau = this.jeu.recupererMissileVaisseau();
+            for (int numMissile = 0; numMissile < missileVaisseau.size(); numMissile++) {
+                this.dessinerUnMissile(missileVaisseau.get(numMissile), im, Color.BLUE);
+            }
+        }
+        if (this.jeu.aUnMissileEnvahisseur()) {
+            List<Missile> missileEnvahisseur = this.jeu.recupererMissileEnvahisseur();
+            for (int numMissile = 0; numMissile < missileEnvahisseur.size(); numMissile++) {
+                this.dessinerUnMissile(missileEnvahisseur.get(numMissile), im, Color.MAGENTA);
             }
         }
         if (this.jeu.aUnEnvahisseur()) {
-            Envahisseur envahisseur = this.jeu.recupereEnvahisseur();
-            this.dessinerUnEnvahisseur(envahisseur, im);
+            List<Envahisseur> envahisseur = this.jeu.recupereEnvahisseur();
+            for (int numEnvahisseur = 0; numEnvahisseur < envahisseur.size(); numEnvahisseur++) {
+                this.dessinerUnEnvahisseur(envahisseur.get(numEnvahisseur), im);
+            }
         }
     }
 
@@ -40,10 +48,10 @@ public class DessinSpaceInvaders implements DessinJeu {
 
     }
 
-    private void dessinerUnMissile(Missile missile, BufferedImage im) {
+    private void dessinerUnMissile(Missile missile, BufferedImage im, Color color) {
         Graphics2D crayon = (Graphics2D) im.getGraphics();
 
-        crayon.setColor(Color.blue);
+        crayon.setColor(color);
         crayon.fillRect(missile.abscisseLaPlusAGauche(), missile.ordonneeLaPlusBasse(), missile.longueur(), missile.hauteur());
     }
 
