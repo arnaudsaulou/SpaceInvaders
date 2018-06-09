@@ -3,7 +3,7 @@ import model.DessinSpaceInvaders;
 import model.SpaceInvaders;
 import moteurJeu.MoteurGraphique;
 
-public class Main {
+class Main {
 
     public static void main(String[] args) throws InterruptedException {
 

@@ -1,27 +1,27 @@
 package model;
 
 public class Position {
-    int x;
-    int y;
+    private int x;
+    private int y;
 
     public Position(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-    public int abscisse() {
+    int abscisse() {
         return this.x;
     }
 
-    public int ordonnee() {
+    int ordonnee() {
         return this.y;
     }
 
-    public void changerAbscisse(int nouvelleAbscisse) {
+    void changerAbscisse(int nouvelleAbscisse) {
         this.x = nouvelleAbscisse;
     }
 
-    public void changerOrdonnee(int nouvelleOrdonnee) {
+    void changerOrdonnee(int nouvelleOrdonnee) {
         this.y = nouvelleOrdonnee;
     }
 

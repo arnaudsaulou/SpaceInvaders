@@ -11,17 +11,12 @@ public class MoteurGraphique {
     /**
      * le jeu a executer
      */
-    private Jeu jeu;
-
-    /**
-     * l'interface graphique
-     */
-    private InterfaceGraphique gui;
+    private final Jeu jeu;
 
     /**
      * l'afficheur a utiliser pour le rendu
      */
-    private DessinJeu dessin;
+    private final DessinJeu dessin;
 
     /**
      * construit un moteur
@@ -41,8 +36,13 @@ public class MoteurGraphique {
     public void lancerJeu(int width, int height) throws InterruptedException {
 
         // creation de l'interface graphique
-        this.gui = new InterfaceGraphique(this.dessin, width, height);
-        Controleur controle = this.gui.getControleur();
+        /*
+      l'interface graphique
+     */ /*
+         * l'interface graphique
+         */
+        InterfaceGraphique gui = new InterfaceGraphique(this.dessin, width, height);
+        Controleur controle = gui.getControleur();
 
         // boucle de jeu
         while (!this.jeu.etreFini()) {
@@ -51,7 +51,7 @@ public class MoteurGraphique {
             // fait evoluer le jeu
             this.jeu.evoluer(c);
             // affiche le jeu
-            this.gui.dessiner();
+            gui.dessiner();
             // met en attente
             Thread.sleep(15);
         }

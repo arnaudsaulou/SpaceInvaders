@@ -4,12 +4,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-public class PanelDessin extends JPanel {
+class PanelDessin extends JPanel {
 
     /**
      * la clase chargee de Dessiner
      */
-    private DessinJeu dessin;
+    private final DessinJeu dessin;
 
     /**
      * image suivante est l'image cachee sur laquelle dessiner
@@ -24,17 +24,18 @@ public class PanelDessin extends JPanel {
     /**
      * la taille des images
      */
-    private int width, height;
+    private final int width;
+    private final int height;
 
     /**
      * constructeur Il construit les images pour doublebuffering ainsi que le
      * Panel associe. Les images stockent le dessin et on demande au panel la
      * mise a jour quand le dessin est fini
      *
-     * @param width  largeur de l'image
-     * @param height hauteur de l'image
+     * @param x  largeur de l'image
+     * @param y hauteur de l'image
      */
-    public PanelDessin(int x, int y, DessinJeu affiche) {
+    PanelDessin(int x, int y, DessinJeu affiche) {
         super();
         this.setPreferredSize(new Dimension(x, y));
         this.width = x;
@@ -52,7 +53,7 @@ public class PanelDessin extends JPanel {
      * demande de mettre a jour le rendu de l'image sur le Panel. Creer une
      * nouvelle image vide sur laquelle dessiner
      */
-    public void dessinerJeu() {
+    void dessinerJeu() {
         // generer la nouvelle image
         this.dessin.dessiner(this.imageSuivante);
 

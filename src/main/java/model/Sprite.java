@@ -1,18 +1,18 @@
 package model;
 
-public abstract class Sprite {
-    protected Position origine;
-    protected Dimension dimension;
-    protected int vitesse;
+abstract class Sprite {
+    final Position origine;
+    final Dimension dimension;
+    final int vitesse;
 
-    public Sprite(Dimension dimension, Position origine, int vitesse) {
+    Sprite(Dimension dimension, Position origine, int vitesse) {
         super();
         this.dimension = dimension;
         this.origine = origine;
         this.vitesse = vitesse;
     }
 
-    public boolean occupeLaPosition(int x, int y) {
+    boolean occupeLaPosition(int x, int y) {
         return estAbscisseCouverte(x) && estOrdonneeCouverte(y);
     }
 
@@ -24,40 +24,40 @@ public abstract class Sprite {
         return (abscisseLaPlusAGauche() <= x) && (x <= abscisseLaPlusADroite());
     }
 
-    public int ordonneeLaPlusBasse() {
+    int ordonneeLaPlusBasse() {
         return this.origine.ordonnee() - this.dimension.hauteur() + 1;
     }
 
-    public int ordonneeLaPlusHaute() {
+    int ordonneeLaPlusHaute() {
         return this.origine.ordonnee();
     }
 
-    public int abscisseLaPlusADroite() {
+    int abscisseLaPlusADroite() {
         return this.origine.abscisse() + this.dimension.longueur() - 1;
     }
 
-    public int abscisseLaPlusAGauche() {
+    int abscisseLaPlusAGauche() {
         return this.origine.abscisse();
     }
 
-    public void positionner(int x, int y) {
+    void positionner(int x, int y) {
         this.origine.changerAbscisse(x);
         this.origine.changerOrdonnee(y);
     }
 
-    public int hauteur() {
+    int hauteur() {
         return this.dimension.hauteur();
     }
 
-    public int longueur() {
+    int longueur() {
         return this.dimension.longueur();
     }
 
-    public void deplacerHorizontalementVers(Direction direction) {
+    void deplacerHorizontalementVers(Direction direction) {
         this.origine.changerAbscisse(this.origine.abscisse() + direction.valeur() * this.vitesse);
     }
 
-    public void deplacerVerticalementVers(Direction direction) {
+    void deplacerVerticalementVers(Direction direction) {
         this.origine.changerOrdonnee(this.origine.ordonnee() + direction.valeur() * this.vitesse);
     }
 

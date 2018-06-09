@@ -1,6 +1,7 @@
 import model.Dimension;
 import model.Position;
 import model.SpaceInvaders;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import utils.DebordementEspaceJeuException;
@@ -414,6 +415,43 @@ public class SpaceInvadersTest {
                 "...............\n", spaceinvaders.recupererEspaceJeuDansChaineASCII());
     }
 
+    @Test
+    public void test_PlacementPlusieurEnvahisseur() {
+
+        spaceinvaders.positionerNouvelleLigneEnvahisseur(0, 15, 2, 1, 1);
+
+        assertEquals("" +
+                "...............\n" +
+                "...............\n" +
+                ".EE.EE.EE.EE.EE\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n", spaceinvaders.recupererEspaceJeuDansChaineASCII());
+    }
+
+    @Test
+    public void test_faireDescendreEnvahisseur() {
+
+        spaceinvaders.positionnerUnNouvelEnvahisseur(new Dimension(1, 1), new Position(0, 0), 1);
+        spaceinvaders.recupereEnvahisseur().get(0).faireDescendre();
+
+        assertEquals("" +
+                "...............\n" +
+                "E..............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n", spaceinvaders.recupererEspaceJeuDansChaineASCII());
+    }
+
 
     @Test(expected = FinDuJeuException.class)
     public void test_FinDePariePerdu_EnvahisseurEnBasEspaceDeJeu() {
@@ -445,6 +483,12 @@ public class SpaceInvadersTest {
         spaceinvaders.deplacerEnvahisseur();
 
         spaceinvaders.etreFini();
+    }
+
+    @Test
+    public void test_initialisetionNouvelleLigneEnvahisseur() {
+        spaceinvaders.initialiserLigneEnvahisseur();
+        Assert.assertNotNull(spaceinvaders.getLigneEnvahisseur());
     }
 
 }

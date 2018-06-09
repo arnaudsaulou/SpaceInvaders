@@ -8,17 +8,17 @@ import javax.swing.*;
  *
  * @author Graou
  */
-public class InterfaceGraphique {
+class InterfaceGraphique {
 
     /**
      * le Panel lie a la JFrame
      */
-    private PanelDessin panel;
+    private final PanelDessin panel;
 
     /**
      * le controleur lie a la JFrame
      */
-    private Controleur controleur;
+    private final Controleur controleur;
 
     /**
      * la construction de l'interface grpahique
@@ -27,7 +27,7 @@ public class InterfaceGraphique {
      *
      * @param afficheurUtil l'afficheur a utiliser dans le moteur
      */
-    public InterfaceGraphique(DessinJeu afficheurUtil, int x, int y) {
+    InterfaceGraphique(DessinJeu afficheurUtil, int x, int y) {
         //creation JFrame
         JFrame f = new JFrame();
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -54,14 +54,14 @@ public class InterfaceGraphique {
      *
      * @return
      */
-    public Controleur getControleur() {
+    Controleur getControleur() {
         return controleur;
     }
 
     /**
      * demande la mise a jour du dessin
      */
-    public void dessiner() {
+    void dessiner() {
         this.panel.dessinerJeu();
     }
 

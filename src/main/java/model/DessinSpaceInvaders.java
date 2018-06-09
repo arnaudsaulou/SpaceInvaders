@@ -8,7 +8,7 @@ import java.util.List;
 
 public class DessinSpaceInvaders implements DessinJeu {
 
-    private SpaceInvaders jeu;
+    private final SpaceInvaders jeu;
 
     public DessinSpaceInvaders(SpaceInvaders spaceInvaders) {
         this.jeu = spaceInvaders;
@@ -22,20 +22,20 @@ public class DessinSpaceInvaders implements DessinJeu {
         }
         if (this.jeu.aUnMissileVaisseau()) {
             List<Missile> missileVaisseau = this.jeu.recupererMissileVaisseau();
-            for (int numMissile = 0; numMissile < missileVaisseau.size(); numMissile++) {
-                this.dessinerUnMissile(missileVaisseau.get(numMissile), im, Color.BLUE);
+            for (Missile aMissileVaisseau : missileVaisseau) {
+                this.dessinerUnMissile(aMissileVaisseau, im, Color.BLUE);
             }
         }
         if (this.jeu.aUnMissileEnvahisseur()) {
             List<Missile> missileEnvahisseur = this.jeu.recupererMissileEnvahisseur();
-            for (int numMissile = 0; numMissile < missileEnvahisseur.size(); numMissile++) {
-                this.dessinerUnMissile(missileEnvahisseur.get(numMissile), im, Color.MAGENTA);
+            for (Missile aMissileEnvahisseur : missileEnvahisseur) {
+                this.dessinerUnMissile(aMissileEnvahisseur, im, Color.MAGENTA);
             }
         }
         if (this.jeu.aUnEnvahisseur()) {
             List<Envahisseur> envahisseur = this.jeu.recupereEnvahisseur();
-            for (int numEnvahisseur = 0; numEnvahisseur < envahisseur.size(); numEnvahisseur++) {
-                this.dessinerUnEnvahisseur(envahisseur.get(numEnvahisseur), im);
+            for (Envahisseur anEnvahisseur : envahisseur) {
+                this.dessinerUnEnvahisseur(anEnvahisseur, im);
             }
         }
     }

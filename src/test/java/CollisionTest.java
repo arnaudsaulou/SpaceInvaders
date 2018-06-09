@@ -103,4 +103,19 @@ public class CollisionTest {
         Assert.assertTrue(Collision.detecterCollision(spaceinvaders.recupererMissileVaisseau().get(0), spaceinvaders.recupereEnvahisseur().get(0)));
     }
 
+    @Test
+    public void test_VaisseauToucheParMissileEnvahisseur() {
+
+        spaceinvaders.initialiserLigneEnvahisseur();
+        spaceinvaders.positionnerUnNouvelEnvahisseur(new Dimension(1, 1), new Position(0, 0), 1);
+        spaceinvaders.positionnerUnNouveauVaisseau(new Dimension(1, 1), new Position(0, 9), 1);
+        spaceinvaders.tirerUnMissileDepuisEnvahisseur(new Dimension(1, 1), 1, 0, 0);
+
+        for (int i = 0; i < 8; i++) {
+            spaceinvaders.deplacerMissile();
+        }
+
+        Assert.assertTrue(Collision.detecterCollision(spaceinvaders.recupererMissileEnvahisseur().get(0), spaceinvaders.recupererVaisseau()));
+    }
+
 }

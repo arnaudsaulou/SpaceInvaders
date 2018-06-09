@@ -8,12 +8,12 @@ import java.awt.event.KeyListener;
  *
  * @author vthomas
  */
-public class Controleur implements KeyListener {
+class Controleur implements KeyListener {
 
     /**
      * commande en cours
      */
-    private Commande commandeEnCours;
+    private final Commande commandeEnCours;
     /**
      * commande a retourner la difference avec la commandeencours vient du fait
      * qu'on veut memoriser une touche appuyee
@@ -23,7 +23,7 @@ public class Controleur implements KeyListener {
     /**
      * construction du controleur par defaut le controleur n'a pas de commande
      */
-    public Controleur() {
+    Controleur() {
         this.commandeEnCours = new Commande();
         this.commandeARetourner = new Commande();
     }
@@ -34,7 +34,7 @@ public class Controleur implements KeyListener {
      *
      * @return commande faite par le joueur
      */
-    public Commande getCommande() {
+    Commande getCommande() {
         Commande aRetourner = this.commandeARetourner;
         this.commandeARetourner = new Commande(this.commandeEnCours);
         return (aRetourner);
@@ -92,7 +92,7 @@ public class Controleur implements KeyListener {
     }
 
     @Override
-    /**
+    /*
      * ne fait rien
      */
     public void keyTyped(KeyEvent e) {

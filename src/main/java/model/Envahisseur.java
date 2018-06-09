@@ -4,18 +4,18 @@ import utils.MissileException;
 
 public class Envahisseur extends Sprite {
 
-    boolean vaVersLaDroite;
+    private boolean vaVersLaDroite;
 
-    public Envahisseur(Dimension dimension, Position origine, int vitesse) {
+    Envahisseur(Dimension dimension, Position origine, int vitesse) {
         super(dimension, origine, vitesse);
         this.vaVersLaDroite = true;
     }
 
-    public void inverserDirectionDeplacement() {
+    void inverserDirectionDeplacement() {
         this.vaVersLaDroite = !this.vaVersLaDroite;
     }
 
-    public Direction getDirectionDeplacement() {
+    Direction getDirectionDeplacement() {
         if (this.vaVersLaDroite) {
             return Direction.DROITE;
         } else {
@@ -27,7 +27,7 @@ public class Envahisseur extends Sprite {
         this.origine.changerOrdonnee(this.origine.ordonnee() + Direction.BAS_ECRAN.valeur() * this.vitesse * this.dimension.hauteur());
     }
 
-    public Missile tirerUnMissile(Dimension dimensionMissile, int vitesseMissile) {
+    Missile tirerUnMissile(Dimension dimensionMissile, int vitesseMissile) {
 
         if (this.dimension.longueur() < dimensionMissile.longueur()) {
             throw new MissileException("La longueur du missileVaisseau est supérieure à celle du vaisseau.");
@@ -37,7 +37,7 @@ public class Envahisseur extends Sprite {
         return new Missile(dimensionMissile, positionOrigineMissile, vitesseMissile);
     }
 
-    public Position calculerLaPositionDeTirDuMissile(Dimension dimensionMissile) {
+    private Position calculerLaPositionDeTirDuMissile(Dimension dimensionMissile) {
         int abscisseMilieuVaisseau = this.abscisseLaPlusAGauche() + (this.longueur() / 2);
         int abscisseOrigineMissile = abscisseMilieuVaisseau - (dimensionMissile.longueur() / 2);
 
