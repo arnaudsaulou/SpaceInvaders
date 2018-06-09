@@ -9,19 +9,19 @@ public class Position {
         this.y = y;
     }
 
-    int abscisse() {
+    public int abscisse() {
         return this.x;
     }
 
-    int ordonnee() {
+    public int ordonnee() {
         return this.y;
     }
 
-    void changerAbscisse(int nouvelleAbscisse) {
+    public void changerAbscisse(int nouvelleAbscisse) {
         this.x = nouvelleAbscisse;
     }
 
-    void changerOrdonnee(int nouvelleOrdonnee) {
+    public void changerOrdonnee(int nouvelleOrdonnee) {
         this.y = nouvelleOrdonnee;
     }
 

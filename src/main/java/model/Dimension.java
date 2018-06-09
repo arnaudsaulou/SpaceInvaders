@@ -9,11 +9,11 @@ public class Dimension {
         this.hauteur = hauteur;
     }
 
-    int longueur() {
+    public int longueur() {
         return this.longueur;
     }
 
-    int hauteur() {
+    public int hauteur() {
         return this.hauteur;
     }
 

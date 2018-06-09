@@ -418,7 +418,7 @@ public class SpaceInvadersTest {
     @Test
     public void test_PlacementPlusieurEnvahisseur() {
 
-        spaceinvaders.positionerNouvelleLigneEnvahisseur(0, 15, 2, 1, 1);
+        spaceinvaders.positionerNouvelleLigneEnvahisseur(0, 15, 2, 1, 1, 0);
 
         assertEquals("" +
                 "...............\n" +

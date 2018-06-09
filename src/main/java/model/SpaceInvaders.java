@@ -38,16 +38,17 @@ public class SpaceInvaders implements Jeu {
                 Constante.ESPACEJEU_LONGUEUR,
                 Constante.ENVAHISSEUR_LONGUEUR,
                 Constante.ENVAHISSEUR_HAUTEUR,
-                Constante.ENVAHISSEUR_VITESSE);
+                Constante.ENVAHISSEUR_VITESSE,
+                Constante.MARGIN_SECURITE);
 
         validationVitesseMissile();
     }
 
     public void positionerNouvelleLigneEnvahisseur(int numLigne, int longueurEspaceJeu, int envahisseurLongueur,
-                                                   int envahisseurHauteur, int envahisseurVitesse) {
+                                                   int envahisseurHauteur, int envahisseurVitesse, int margeSecurite) {
 
         this.ligneEnvahisseur.add(new LigneEnvahisseur(numLigne,
-                longueurEspaceJeu, envahisseurLongueur, envahisseurHauteur, envahisseurVitesse));
+                longueurEspaceJeu, envahisseurLongueur, envahisseurHauteur, envahisseurVitesse, margeSecurite));
     }
 
     private void validationVitesseMissile() {
@@ -469,9 +470,9 @@ public class SpaceInvaders implements Jeu {
         LigneEnvahisseur() {
         }
 
-        LigneEnvahisseur(int numLigne, int longueurEspaceJeu, int envahisseurLongueur, int envahisseurHauteur, int envahisseurVitesse) {
+        LigneEnvahisseur(int numLigne, int longueurEspaceJeu, int envahisseurLongueur, int envahisseurHauteur, int envahisseurVitesse, int margeSecurite) {
 
-            this.nbEnvahisseur = longueurEspaceJeu / ((envahisseurLongueur + (envahisseurLongueur / 2)));
+            this.nbEnvahisseur = longueurEspaceJeu / ((envahisseurLongueur + (envahisseurLongueur / 2)) + margeSecurite);
 
             Dimension dimensionEnvahisseur = new Dimension(envahisseurLongueur, envahisseurHauteur);
 

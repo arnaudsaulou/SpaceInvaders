@@ -2,7 +2,7 @@ package model;
 
 public class Collision {
 
-    static boolean detecterCollisionAvecMargin(Sprite sprite1, Sprite sprite2, int margin) {
+    public static boolean detecterCollisionAvecMargin(Sprite sprite1, Sprite sprite2, int margin) {
         if (sprite1 == null || sprite2 == null) {
             return false;
         } else {
