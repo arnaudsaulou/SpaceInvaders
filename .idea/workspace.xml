@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SpaceInvader:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="719ca721-7d8c-44e7-8a6c-14f63b6fdde8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/SpaceInvader_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class_Diagram_SpaceInvaders.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word_Cloud_SpaceInvader.png" beforeDir="false" afterPath="$PROJECT_DIR$/Word_Cloud_SpaceInvader.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Collision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Collision.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Constante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Constante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Dimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Dimension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Envahisseur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Envahisseur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Missile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Missile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/SpaceInvaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/SpaceInvaders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Sprite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Constante.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Constante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/DessinSpaceInvaders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/DessinSpaceInvaders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Dimension.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Dimension.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Direction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Envahisseur.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Envahisseur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/SpaceInvaders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/SpaceInvaders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Sprite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Sprite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SpaceInvadersTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SpaceInvadersTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Position.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Vaisseau.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Vaisseau.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moteurJeu/Commande.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moteurJeu/Commande.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moteurJeu/Controleur.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moteurJeu/Controleur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moteurJeu/InterfaceGraphique.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moteurJeu/InterfaceGraphique.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moteurJeu/MoteurGraphique.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moteurJeu/MoteurGraphique.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moteurJeu/PanelDessin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moteurJeu/PanelDessin.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,20 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SpaceInvaders.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SpaceInvaders.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/SpaceInvaders.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="130">
-              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DessinSpaceInvaders.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/DessinSpaceInvaders.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+              <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -79,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/model/Missile.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -102,6 +90,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Constante.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Constante.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Envahisseur.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/Envahisseur.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -120,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constante.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Constante.java">
+      <file leaf-file-name="SpaceInvadersTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+            <state relative-caret-position="97">
+              <caret line="420" column="74" selection-start-line="420" selection-start-column="74" selection-end-line="420" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -211,7 +208,6 @@
         <option value="$PROJECT_DIR$/src/main/java/model/LigneEnvahisseur.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/FinDuJeuException.java" />
         <option value="$PROJECT_DIR$/src/test/java/MissileTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/DessinSpaceInvaders.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Vaisseau.java" />
         <option value="$PROJECT_DIR$/src/main/java/moteurJeu/Commande.java" />
@@ -221,14 +217,15 @@
         <option value="$PROJECT_DIR$/src/test/java/CollisionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/moteurJeu/Controleur.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Collision.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Constante.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Dimension.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Direction.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Envahisseur.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Missile.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Position.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Sprite.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/SpaceInvaders.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Constante.java" />
       </list>
     </option>
   </component>
@@ -318,11 +315,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Class_Diagram_SpaceInvaders.png" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -555,7 +552,7 @@
       <workItem from="1528445898583" duration="3346000" />
       <workItem from="1528454555782" duration="2174000" />
       <workItem from="1528551996780" duration="19144000" />
-      <workItem from="1528578325380" duration="774000" />
+      <workItem from="1528578325380" duration="1422000" />
     </task>
     <task id="LOCAL-00001" summary="Récupération Story 2">
       <created>1525685629633</created>
@@ -697,7 +694,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528572904579</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Fin de projet">
+      <created>1528579234808</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1528579234808</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -733,7 +737,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114378000" />
+    <option name="totallyTimeSpent" value="115026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -822,7 +826,8 @@
     <MESSAGE value="Chevauchement missiles" />
     <MESSAGE value="Refactor des collisions (margin) + Optimisation test collisions" />
     <MESSAGE value="Code tout beau tout propre" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code tout beau tout propre" />
+    <MESSAGE value="Fin de projet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fin de projet" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1141,13 +1146,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="17" column="95" lean-forward="true" selection-start-line="17" selection-start-column="95" selection-end-line="17" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1479,13 +1477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Constante.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/DessinSpaceInvaders.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1510,7 +1501,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Missile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1528,13 +1519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Vaisseau.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Dimension.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1542,10 +1526,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SpaceInvadersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="420" column="74" selection-start-line="420" selection-start-column="74" selection-end-line="420" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Vaisseau.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/SpaceInvaders.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Constante.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -1555,10 +1560,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>SpaceInvader:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
